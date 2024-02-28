@@ -1,5 +1,6 @@
 import './App.css'
 import Contact from './components/Contact/Contact'
+import Footer from './components/Footer/Footer'
 import Header from './components/Header/Header'
 import MyProjects from './components/MyProjects/MyProjects'
 import MySkill from './components/MySkill/MySkill'
@@ -17,6 +18,7 @@ function App () {
         <MySkill></MySkill>
         <Contact></Contact>
       </div>
+      <Footer></Footer>
     </>
   )
 }

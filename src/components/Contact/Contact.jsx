@@ -1,10 +1,13 @@
 
 import emailjs from '@emailjs/browser';
 import { useRef } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const Contact = () => {
 
     const form = useRef();
+    AOS.init();
     
  
 
@@ -12,29 +15,9 @@ const Contact = () => {
     const publicKey = import.meta.env.VITE_SOME_PUBLIC_KEY
     const handleSubmit = (e) => {
         e.preventDefault()
-        // // const name = e.target.name.value;
+
         const form = e.target
-        // console.log(  )
-        // const name = form.name.value;
-        // const email = form.email.value;
-        // const massage = form.massage.value;
-        // const formData = {
-        //     name, 
-        //     email,
-        //     massage
-        // }
 
-        // console.log(formData)
-        // const email = form.name.value;
-        // const massage = form.name.value;
-
-        // // const formData = {
-        // //     // name,
-        // //     email,
-        // //     massage
-        // // }
-
-        // // console.log( formData)
         console.log(publicKey, serverKey)
 
         emailjs.sendForm(`${serverKey}`, 'email-services', form, `${publicKey}`)
@@ -50,9 +33,11 @@ const Contact = () => {
 
     return (
         <div className="pt-10 pb-20 mt-32 bg-slate-200 rounded-xl">
-            <div className="w-1/2 mx-auto ">
+            <div className="px-10 mx-auto lg:px-0 md:px-0 lg:w-1/2 md:w-1/2 "  data-aos="fade-down"
+     data-aos-easing="linear"
+     data-aos-duration="1500">
             <h1 className="mb-5 text-4xl font-semibold text-center ">Contact Us</h1>
-            <form ref={form} onSubmit={handleSubmit}>
+            <form ref={form} onSubmit={handleSubmit} >
             <label className="w-full form-control">
                 <div className="label">
                     <span className="text-2xl label-text">Your name</span>
