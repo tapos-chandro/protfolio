@@ -42,19 +42,19 @@ const Contact = () => {
                 <div className="label">
                     <span className="text-2xl label-text">Your name</span>
                 </div>
-                <input type="text" placeholder="Your name" name="name" className="w-full text-xl rounded-badge input input-bordered" />
+                <input type="text" placeholder="Your name" name="name" className="w-full text-xl rounded-badge input input-bordered" required/>
             </label>
             <label className="w-full form-control">
                 <div className="label">
                     <span className="text-2xl label-text">Your email</span>
                 </div>
-                <input type="email" placeholder="Your email" name="email" className="w-full text-xl rounded-badge input input-bordered" />
+                <input type="email" placeholder="Your email" name="email" className="w-full text-xl rounded-badge input input-bordered" required/>
             </label>
             <label className="w-full form-control">
                 <div className="label">
                     <span className="text-2xl label-text">Your massage</span>
                 </div>
-                <textarea className="text-xl rounded-badge textarea textarea-bordered" name="message" placeholder="Your massage"></textarea>
+                <textarea className="text-xl rounded-badge textarea textarea-bordered" name="message" placeholder="Your massage" required></textarea>
             </label>
             <div className="py-2 my-4 bg-blue-400 rounded-badge hover:text-white">
             <button type="submit" className="w-full py-2 text-2xl font-semibold ">Send Now</button>
