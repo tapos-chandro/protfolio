@@ -3,6 +3,7 @@ import emailjs from '@emailjs/browser';
 import { useRef } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import Swal from 'sweetalert2';
 
 const Contact = () => {
 
@@ -15,21 +16,33 @@ const Contact = () => {
     const publicKey = import.meta.env.VITE_SOME_PUBLIC_KEY
     const handleSubmit = (e) => {
         e.preventDefault()
+        
 
-        const form = e.target
+        let form = e.target
+        
+    
 
-        console.log(publicKey, serverKey)
+        
 
         emailjs.sendForm(`${serverKey}`, 'email-services', form, `${publicKey}`)
         .then((result) => {
-            console.log(result);
+            if(result){
+                Swal.fire({
+                    position: "top-center",
+                    icon: "success",
+                    title: "message send successfully",
+                    showConfirmButton: false,
+                    timer: 1500
+                  });
+                  form.reset()
+            }
         }, (error) => {
             console.log(error.text);
         });
  
     }
 
-
+    
 
     return (
         <div className="pt-10 pb-20 mt-32 bg-slate-200 rounded-xl">
