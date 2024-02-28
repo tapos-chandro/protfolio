@@ -4,7 +4,8 @@ const MyProjects = () => {
       <h1 className='text-4xl font-semibold text-center mt-7'>My Projects</h1>
 
       <div className='grid grid-cols-1 gap-10 mt-20 lg:grid-cols-3 md:grid-cols-2'>
-        <div className='shadow-xl card bg-base-100'   data-aos="zoom-in-right"
+        <div className='shadow-xl card bg-base-100'   data-aos="fade-up"
+     data-aos-anchor-placement="top-bottom"
           data-aos-easing="linear"
           data-aos-duration="1500">
           <div className='m-auto overflow-hidden  h-[300px] hover:cursor-pointer' >
@@ -61,9 +62,10 @@ const MyProjects = () => {
           </div>
         </div>
         <div className='shadow-xl card bg-base-100 '
-        data-aos="zoom-in-left"
-        data-aos-easing="linear"
-          data-aos-duration="1500"
+      data-aos="fade-up"
+      data-aos-anchor-placement="top-bottom"
+           data-aos-easing="linear"
+           data-aos-duration="1500"
         >
           <div className='m-auto overflow-hidden  h-[300px] hover:cursor-pointer'>
             <figure className='hover:h-full object-cover hover:pb-[700px] hover:mx-[100px] transition-all duration-[2000ms] ease-in-out '>
