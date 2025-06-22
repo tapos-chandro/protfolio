@@ -1,6 +1,6 @@
 import TextAnimation from '../TextAnimation/TextAnimation'
 import { FaDownload } from "react-icons/fa6";
-import pdf from "../../assets/taposChandraUpdateResume.pdf"
+import pdf from "../../../src/assets/Tapos-chandra.pdf"
 
 import 'aos/dist/aos.css';
 import Aos from 'aos';
@@ -20,7 +20,7 @@ const Header = () => {
         />
         </div>
         <div className='w-full' data-aos="zoom-in-down" data-aos-duration="4000">
-          <h1 className='text-2xl font-bold lg:text-5xl' >Hi, my name is Tapos Chandro</h1>
+          <h1 className='text-2xl font-bold lg:text-5xl' >Hi, my name is Tapos Chandra</h1>
           <TextAnimation className="py-4"></TextAnimation>
           <p className='pt-3 pb-6 text-lg'>I want to take on the challenge of web development. Where I can refine my skill and expand my knowledge. As an engineering student, I know how to handle situations during complicated times.</p>
 

@@ -21,7 +21,7 @@ const Footer = () => {
                     </div>
                 </nav> 
                 <aside>
-                    <p className="lg:text-2xl">Copyright © 2024 - All right reserved by Tapos Chandro</p>
+                    <p className="lg:text-2xl">Copyright © 2024 - All right reserved by Tapos Chandra</p>
                 </aside>
             </footer>
         </div>
