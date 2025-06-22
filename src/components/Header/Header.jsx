@@ -1,6 +1,5 @@
 import TextAnimation from '../TextAnimation/TextAnimation'
 import { FaDownload } from "react-icons/fa6";
-import pdf from "../../../src/assets/Tapos-chandra.pdf"
 
 import 'aos/dist/aos.css';
 import Aos from 'aos';
