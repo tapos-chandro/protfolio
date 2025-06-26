@@ -35,7 +35,7 @@ const Contact = () => {
 
     return (
         <Element name='contact'>
-            <div className="max-w-4xl px-6 py-16 mx-auto mt-10 bg-white border border-gray-200 shadow-xl rounded-3xl">
+            <div className="max-w-4xl px-6 py-5 mx-auto mt-20 bg-white border border-gray-200 shadow-xl lg:py-16 rounded-3xl">
                 <div className="mb-10 text-center">
                     <h2 className="text-4xl font-bold text-gray-800">Contact Us</h2>
                 </div>

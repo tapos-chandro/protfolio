@@ -39,7 +39,7 @@ const MySkill = () => {
 
     return (
        <Element name='skill'>
-         <section className="max-w-6xl px-6 py-20 mx-auto bg-white shadow-md rounded-3xl">
+         <section className="max-w-6xl px-6 py-10 mx-auto mt-10 bg-white shadow-md rounded-3xl">
             <h1 className="mb-12 text-4xl font-bold text-center text-gray-800" data-aos="fade-up">
                 My Skills
             </h1>

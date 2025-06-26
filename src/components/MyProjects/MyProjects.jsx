@@ -1,13 +1,13 @@
-import miniMission from '../../../src/assets/mini-mission.png';
-import Blog from '../../../src/assets/blog.png';
-import crowdfund from '../../../src/assets/crodfound.png';
+import miniMission from '../../../src/assets/mini-mission-2.png';
+import Blog from '../../../src/assets/blog-2.png';
+import crowdfund from '../../../src/assets/crodfound-2.png';
 import { Element } from 'react-scroll';
 
 const projects = [
   {
     id: 1,
     title: 'Mini Missions',
-    technologies: ['MongoDB', 'Express', 'React', 'Node.js', 'Tailwind CSS', 'Firebase'],
+    technologies: ['MongoDB', 'Express', 'React', 'Node.js', 'Tailwind CSS', 'Firebase', 'Stripe',"sweetalert2", "swiper","react-hook-form","axios","react-icons","react-route", "react-helmet"],
     imgSrc: miniMission,
     aos: 'fade-up',
     liveLink: 'https://mini-missions.netlify.app/',
@@ -17,7 +17,7 @@ const projects = [
   {
     id: 2,
     title: 'Blog Website',
-    technologies: ['MongoDB', 'Express', 'React', 'Node.js', 'Tailwind CSS'],
+    technologies: ['MongoDB', 'Express', 'React', 'Node.js', 'Axios', 'Chakra UI', 'React Icons', 'Moment.js', 'SweetAlert2', 'React Helmet', 'React Router DOM'],
     imgSrc: Blog,
     aos: 'flip-left',
     liveLink: 'https://blog-wibsite.netlify.app/',
@@ -27,7 +27,11 @@ const projects = [
   {
     id: 3,
     title: 'Crowd Fund',
-    technologies: ['MongoDB', 'Express', 'React', 'Node.js', 'Stripe'],
+    technologies: ['MongoDB', 'Express', 'React', 'Node.js',
+      "Firebase Authentication",
+      "React Router",
+      "Tailwind CSS",
+      "React Toastify"],
     imgSrc: crowdfund,
     aos: 'fade-up',
     liveLink: 'https://helpful-mooncake-cfc5b8.netlify.app/',
@@ -40,7 +44,7 @@ const MyProjects = () => {
   return (
 
     <Element name='projects'>
-      <div className="px-6 py-16 mx-auto max-w-7xl">
+      <div className="pt-20 mx-auto lg:px-6 max-w-7xl">
         <h1 className="text-4xl font-semibold text-center text-gray-800 mb-14">My Projects</h1>
 
         <div className="grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-3">
@@ -54,11 +58,11 @@ const MyProjects = () => {
               data-aos-duration="1500"
             >
               {/* Project image with zoom on hover */}
-              <div className="overflow-hidden h-[300px] cursor-pointer rounded-t-2xl">
+              <div className="overflow-hidden cursor-pointer max-h-52 rounded-t-2xl">
                 <img
                   src={imgSrc}
                   alt={title}
-                  className="object-cover w-full h-full transition-transform duration-700 transform hover:scale-110"
+                  className="w-full h-full transition-transform duration-700 transform hover:scale-110"
                 />
               </div>
 

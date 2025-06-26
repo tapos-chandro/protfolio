@@ -12,7 +12,7 @@ const Header = () => {
 
   return (
     <Element name='about'>
-      <div className="py-12 bg-white hero">
+      <div className="pt-12 bg-white hero">
         <div className="flex flex-col-reverse items-center justify-between w-full gap-12 hero-content lg:flex-row">
           {/* Left: Text */}
           <div
@@ -34,7 +34,7 @@ const Header = () => {
             <a
               target="_blank"
               rel="noopener noreferrer"
-              href="https://drive.google.com/file/d/1E23N95jxrcLPdVjACLzpMPDzlZK3PcNk/view?usp=sharing"
+              href="https://drive.google.com/file/d/1Tsn9TPF32xwAGoMZeJCUedD1S2_jEVgb/view?usp=sharing"
             >
               <button className="flex items-center gap-2 px-6 py-2 text-lg font-semibold text-white transition duration-300 rounded-full shadow-lg bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 hover:opacity-90">
                 <FaDownload /> Resume

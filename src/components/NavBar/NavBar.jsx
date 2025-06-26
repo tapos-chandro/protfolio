@@ -9,13 +9,13 @@ const NavBar = () => {
 
   const navLinks = [
     { name: 'About', path: 'about' },
-    { name: 'Projects', path: 'projects' },
     { name: 'Skills', path: 'skill' },
+    { name: 'Projects', path: 'projects' },
     { name: 'Contact', path: 'contact' },
   ];
 
   return (
-    <nav className="z-50 w-full bg-white border shadow-md ">
+    <nav className="z-50 w-full bg-white border shadow-md">
       <div className="container flex items-center justify-between px-6 py-4 mx-auto ">
         {/* Logo */}
         <div className="text-2xl font-bold text-[#1f2a38]">
@@ -26,7 +26,7 @@ const NavBar = () => {
         <ul className="hidden gap-8 font-medium text-gray-800 md:flex">
           {navLinks.map((link) => (
             <li key={link.name}>
-              <Link to={link.path} smooth={true} duration={500} className="duration-200 hover:text-indigo-600 hover:cursor-pointer">
+              <Link to={link.path} offset={-64}  smooth={true} duration={500} className="duration-200 hover:text-indigo-600 hover:cursor-pointer">
                 {link.name}
               </Link>
             </li>
@@ -49,6 +49,7 @@ const NavBar = () => {
               <Link
                 to={link.path}
                 smooth={true} duration={500}
+                offset={-64}
                 className="duration-200 hover:text-indigo-600 hover:cursor-pointer"
                 onClick={() => setOpen(false)}
               >

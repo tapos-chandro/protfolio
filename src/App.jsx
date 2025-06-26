@@ -11,17 +11,18 @@ function App() {
   return (
     <>
       <div className=''>
-        <div className='fixed z-50 w-full'>
-          <NavBar></NavBar>
-        </div>
+       
+          <div className='fixed z-50 w-full '>
+            <NavBar></NavBar>
+          </div>
         <div className='container mx-auto'>
           <Header></Header>
           {/* <About></About> */}
         </div>
       </div>
-      <div className='container px-5 py-10 mx-auto lg:px-0'>
-        <MyProjects></MyProjects>
+      <div className='container px-5 pt-10 mx-auto lg:px-0'>
         <MySkill></MySkill>
+        <MyProjects></MyProjects>
         <Contact></Contact>
       </div>
       <Footer></Footer>

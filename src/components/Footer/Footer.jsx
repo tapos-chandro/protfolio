@@ -8,7 +8,7 @@ import {
 
 const Footer = () => {
   return (
-    <footer className="py-10 text-white bg-gradient-to-r from-slate-800 to-slate-900">
+    <footer className="py-10 mt-20 text-white bg-gradient-to-r from-slate-800 to-slate-900">
       <div className="flex flex-col items-center justify-center space-y-6">
         {/* Social Links */}
         <div className="flex gap-6 text-2xl">
